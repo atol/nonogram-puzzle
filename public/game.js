@@ -190,16 +190,12 @@ function reset() {
     makeGrid();
 }
 
-makeGrid();
-
 window.onload = function () {
     var hour = 0;
     var min = 0;
     var sec = 0;
-    var clock = 0;
 
     function timer() {
-        clearTimeout(clock);
         sec++;
         if (sec > 59) {
             sec = 0;    
@@ -209,8 +205,9 @@ window.onload = function () {
             hour++;
         }
         document.getElementsByTagName('h2')[0].textContent = (hour ? (hour > 9 ? hour : "0" + hour) : "00") + ":" + (min ? (min > 9 ? min : "0" + min) : "00") + ":" + (sec > 9 ? sec : "0" + sec);
-        clock = setTimeout(timer, 1000);
+        window.setTimeout(timer, 1000);
     }
 
     timer();
+    makeGrid();
 }
