@@ -1,0 +1,126 @@
+body {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.game {
+    display: inline-block;
+}
+
+#grid { 
+    margin:1em auto; 
+    border-collapse:collapse;
+    border: 2px solid #000000;
+    display: inline-block;
+}
+
+#grid th {
+    width: 28px;
+    height: 28px;
+    padding: 4px;
+    line-height: 1.5;
+    border: 1px solid #999999;
+    background-color: #eeeeee;
+}
+
+#grid th.row {
+    width: 110px;
+    text-align: right;
+    word-spacing: 6px;
+}
+
+#grid th.col {
+    vertical-align: bottom;
+}
+
+#grid td {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #999999;
+    font-size: 150%;
+    background-color: #ffffff;
+}
+
+#grid td:hover {
+    background-color: #DDD;
+}
+
+#grid td.clicked {
+    background-color: #000000;
+}
+
+#grid td.crossed {
+    background: 
+         linear-gradient(to top left,
+             rgba(0,0,0,0) 0%,
+             rgba(0,0,0,0) calc(50% - 1px),
+             #999999,
+             rgba(0,0,0,0) calc(50% + 1px),
+             rgba(0,0,0,0) 100%),
+         linear-gradient(to top right,
+             rgba(0,0,0,0) 0%,
+             rgba(0,0,0,0) calc(50% - 1px),
+             #999999,
+             rgba(0,0,0,0) calc(50% + 1px),
+             rgba(0,0,0,0) 100%);
+}
+
+#grid td.marked {
+    cursor: auto;
+    background-color: #000000;
+}
+
+#grid td.unmarked {
+    cursor: auto;
+}
+
+#grid td.unmarked:hover {
+    background-color: #ffffff;
+}
+
+#settings {
+    margin-top: 20px;
+}
+
+#reset {
+    cursor: pointer;
+    background-color: #888888;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 30px;
+}
+
+  #reset:hover {
+    background-color: #000000;
+}
+
+#solution {
+    cursor: pointer;
+    background-color: #888888;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#solution:hover {
+    background-color: #4CAF50;
+}

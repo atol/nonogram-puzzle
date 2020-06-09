@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <%- include ("../partials/header") %>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <h1>Nonogram</h1>
+            <p> 
+                Left click once to fill in cell.<br>
+                Left click twice to cross off cell.<br>
+                Left click three times to unmark cell.
+            </p>
+            <h2><time>00:00:00</time></h2>
+            <div class="game">
+                <table id="grid"></table>
+            </div>
+            <div id="settings">
+                <button id="reset" onclick="reset()">Reset</button>
+                <button id="solution" onclick="showSolution()">Solution</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
