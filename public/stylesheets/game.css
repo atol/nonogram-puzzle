@@ -12,11 +12,18 @@ footer {
     text-align: center;
     margin-top: 30px;
     margin-bottom: 20px;
-    font-size: 12px;
+    font-size: 75%;
 }
 
 .container {
     text-align: center;
+}
+
+.info {
+    display: inline-block;
+    width: 740px;
+    text-align: justify;
+    font-size: 100%;
 }
 
 .game {
@@ -28,7 +35,7 @@ footer {
     border-collapse:collapse;
     border: 2px solid #000000;
     display: inline-block;
-    font-size: 14px;
+    font-size: 80%;
 }
 
 #grid th {
@@ -106,7 +113,7 @@ footer {
     color: white;
     padding: 8px 16px;
     text-align: center;
-    font-size: 12px;
+    font-size: 75%;
     font-weight: bold;
     text-transform: uppercase;
     margin-right: 30px;
@@ -123,7 +130,7 @@ footer {
     color: white;
     padding: 8px 16px;
     text-align: center;
-    font-size: 12px;
+    font-size: 75%;
     font-weight: bold;
     text-transform: uppercase;
 }
